@@ -1,0 +1,52 @@
+
+* {
+    & > * {
+        &::-webkit-scrollbar {
+            width: .5em;
+            height: .5em;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f100; 
+            border-radius: 50em;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(218, 218, 218, 0); 
+            border-radius: 50em;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(198, 198, 198, 0); 
+        }
+    }
+    &:hover > * {
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: rgba($black, .2); 
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba($black, 0.3); 
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba($black, 0.8); 
+        }
+    }
+  }
+  
+
+body{
+    font-family: 'Roboto', sans-serif;
+   &.home_index{
+    background-image: url(../../assets/images/image-103.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+}

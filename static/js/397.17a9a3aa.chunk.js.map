@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/397.17a9a3aa.chunk.js","mappings":"uIAQA,UANA,WACE,OACE,kCAEH,C","sources":["Pages/HealthArticle/index.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nfunction HealthArticle() {\r\n  return (\r\n    <div>index</div>\r\n  )\r\n}\r\n\r\nexport default HealthArticle"],"names":[],"sourceRoot":""}

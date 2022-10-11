@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/210.bb13f54b.chunk.js","mappings":"uIAQA,UANA,WACE,OACE,kCAEH,C","sources":["Pages/Clubs/index.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nfunction Clubs() {\r\n  return (\r\n    <div>index</div>\r\n  )\r\n}\r\n\r\nexport default Clubs"],"names":[],"sourceRoot":""}

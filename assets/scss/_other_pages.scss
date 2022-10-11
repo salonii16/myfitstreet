@@ -1,0 +1,4619 @@
+@charset "UTF-8";
+@import "variables";
+
+// design by deepak
+
+.hero_Section {
+  min-height: calc(100vh - 0em);
+  padding-top: 5em;
+  padding-bottom: 3em;
+
+  & .leftSide {
+    & .fianlHeroHeading {
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 70px;
+      color: $black;
+    }
+
+    & .leftHeroPerograph {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    & .imgIcon {
+      width: 44px;
+      height: 44px;
+    }
+
+    & .serviceType {
+      & .title {
+        font-size: 18px;
+      }
+
+      & span {
+        font-size: 14px;
+      }
+    }
+
+    & .appDownloadBtn {
+      & img {
+        height: 2.8em;
+        width: auto;
+      }
+    }
+  }
+
+  & .heroImgOuter {}
+}
+
+.services2 {
+  & .serviceOuter {
+    background-color: #f7f6fc !important;
+    border-radius: 75px !important;
+    padding: 65px 16px !important;
+
+    & .image1 {
+      position: absolute;
+      left: -10px;
+      bottom: 30px;
+      z-index: 0;
+      width: 500px;
+    }
+
+    & .imgIcon {
+      width: 60px !important;
+      height: 60px !important;
+    }
+
+    & .ratingCrad {
+      border-radius: 20px !important;
+
+      & .cardText {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: $black;
+      }
+    }
+
+    & .serviceType {
+      & .title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        color: #121016;
+      }
+
+      & span {
+        font-size: 14px;
+      }
+    }
+  }
+
+  & .side_card {
+    z-index: 1;
+  }
+}
+
+.mb-90px {
+  margin-bottom: 90px !important;
+}
+
+.mb-30px {
+  margin-bottom: 30px;
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@mixin hero_Section-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin hero_Section-mixin-min-md() {
+  .social-btns {
+    & .app_btn {
+      margin: 13px 5px !important;
+      width: 160px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin hero_Section-mixin-min-lg() {
+  .hero_Section {}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin hero_Section-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin hero_Section-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin hero_Section-mixin-max-xs() {
+  .hero_Section {
+    background: #e5edf0;
+  }
+
+  .social-btns {
+    display: inline-block !important;
+
+    & .app_btn {
+      margin: 20px 54px;
+    }
+  }
+
+  .hero_Section .leftSide .fianlHeroHeading {
+    font-size: 22px !important;
+    line-height: 40px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .hero_Section .leftSide .leftHeroPerograph {
+    font-size: 15px !important;
+    line-height: 26px !important;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin hero_Section-mixin-max-sm() {
+  .hero_Section {
+    background: #e5edf0;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    min-height: calc(100vh - 0em);
+
+    & .hrro_bg_img {
+      & .col_1 {
+        & .top_Heading {
+          font-size: 42px;
+          line-height: 52px;
+
+          & .perograph_top_hero {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        & .col_2 {
+          & .home_image {
+            & img {
+              padding-top: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero_Section .leftSide .fianlHeroHeading {
+    font-size: 35px;
+  }
+
+  .hero_Section .leftSide .appDownloadBtn img {
+    height: 2em;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin hero_Section-mixin-max-md() {
+  .services2 {
+    & .serviceOuter {
+      background-color: #f7f6fc !important;
+      border-radius: 40px !important;
+      padding: 40px 16px !important;
+
+      & .image1 {
+        width: unset;
+        position: unset;
+        left: unset;
+        bottom: unset;
+
+        & img {
+          width: 13em;
+        }
+      }
+
+      & .imgIcon {
+        width: 44px;
+        height: 44px;
+      }
+
+      & .serviceType {
+        & .title {
+          font-size: 16px;
+          margin: 0;
+        }
+
+        & span {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .mb-md-30px {
+    margin-bottom: 30px !important;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin hero_Section-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin hero_Section-mixin-max-xl() {}
+
+// *************************************************************************INDEX HOME******************************************************************************
+
+// *********************************************************************** LOGIN PAGE******************************************************************************
+.login_Page {
+  padding-top: 70px;
+  background-image: url(../images/image-35.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+
+  & .login_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 55px;
+    color: $white;
+    text-align: end;
+    padding-bottom: 30px;
+    padding-left: 190px;
+  }
+
+  & .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 450px;
+    height: 100%;
+    margin-top: 70px;
+
+    & .form_Top_Heading {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    & .form_Top_Text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    & .list_tabs {
+      background-color: #eef0f4;
+      color: $black;
+      border-radius: 15px;
+
+      & .tabs_list {
+        & .nav_tabs_button {
+          border-radius: 15px;
+          color: $black;
+
+          &.active {
+            background-color: $theme1;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    & .tab_content {
+      & .send_Otp {
+        border-radius: 10px;
+        background-color: $theme1;
+        color: $white  !important;
+        box-shadow: 0px 25px 26px -14px rgba(239, 80, 54, 0.3);
+      }
+
+      & .border_2_Side {
+        text-align: center !important;
+        border-width: 2px !important;
+        border-bottom: 1px solid #64646480 !important;
+        position: relative !important;
+
+        & span {
+          left: 50% !important;
+          top: 100% !important;
+          background-color: $white;
+          transform: translate(-50%, -50%) !important;
+          position: absolute !important;
+        }
+      }
+
+      & .icon_group {
+        & .icon_group_list {
+          width: 50px;
+          height: 50px;
+          border: 2px solid #eef1f5;
+          border-radius: 50%;
+        }
+      }
+
+      & .text_color_change {
+        color: #646464;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+
+        & .span_text {
+          & a {
+            font-style: italic;
+            font-size: 16px;
+            line-height: 24px;
+            color: $theme1;
+          }
+        }
+      }
+
+      & .footer_bottam_text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #646464;
+        line-height: 22px;
+      }
+    }
+
+    & .forget_password {
+      font-style: italic;
+      line-height: 24px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  & input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 80px $white inset !important;
+    -webkit-text-fill-color: $black  !important;
+    filter: invert(0);
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin login-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin login-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin login-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin login-mixin-min-xl() {
+  .login_Page {
+    padding-top: 70px;
+    background-image: url(../images/image-35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+
+    & .login_side_Text {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 50px;
+      line-height: 55px;
+      color: $white;
+      text-align: end;
+      padding-bottom: 30px;
+      padding-left: 190px;
+    }
+
+    & .forms_web {
+      background-color: $white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 450px;
+      height: 100%;
+      margin-top: 70px;
+
+      & .form_Top_Heading {
+        font-weight: 500;
+        font-style: italic;
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      & .form_Top_Text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      & .list_tabs {
+        background-color: #eef0f4;
+        color: $black;
+        border-radius: 15px;
+
+        & .tabs_list {
+          & .nav_tabs_button {
+            border-radius: 15px;
+            color: $black;
+
+            &.active {
+              background-color: $theme1;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      & .tab_content {
+        & .send_Otp {
+          border-radius: 10px;
+          background-color: $theme1;
+          color: $white  !important;
+          box-shadow: 0px 25px 26px -14px rgba(239, 80, 54, 0.3);
+        }
+
+        & .border_2_Side {
+          text-align: center !important;
+          border-width: 2px !important;
+          border-bottom: 1px solid #64646480 !important;
+          position: relative !important;
+
+          & span {
+            left: 50% !important;
+            top: 100% !important;
+            background-color: $white;
+            transform: translate(-50%, -50%) !important;
+            position: absolute !important;
+          }
+        }
+
+        & .icon_group {
+          & .icon_group_list {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        & .text_color_change {
+          color: #646464;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 500;
+
+          & .span_text {
+            & a {
+              font-style: italic;
+              font-size: 16px;
+              line-height: 24px;
+              color: $theme1;
+            }
+          }
+        }
+
+        & .footer_bottam_text {
+          font-size: 12px;
+          font-weight: 400;
+          color: #646464;
+          line-height: 22px;
+        }
+      }
+
+      & .forget_password {
+        font-style: italic;
+        line-height: 24px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin login-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin login-mixin-max-xs() {
+  .login_Page {
+    padding-top: 70px;
+    background-image: url(../images/image-35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+
+    & .login_side_Text {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 26px !important;
+      line-height: 36px !important;
+      color: $white;
+      text-align: center;
+      padding-bottom: unset;
+      padding-left: unset;
+    }
+
+    & .forms_web {
+      background-color: $white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 100% !important;
+      height: 100%;
+      margin-top: 70px;
+
+      & .form_Top_Heading {
+        font-weight: 500;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 31px;
+      }
+
+      & .form-control {
+        font-size: 14px !important;
+        height: 40px !important;
+      }
+
+      & .image_fleg_form {
+        height: 40px !important;
+      }
+
+      & .form_Top_Text {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+      }
+
+      & .list_tabs {
+        background-color: #eef0f4;
+        color: $black;
+        border-radius: 15px;
+
+        & .tabs_list {
+          & .nav_tabs_button {
+            border-radius: 15px;
+            color: $black;
+            font-size: 12px !important;
+
+            &.active {
+              background-color: $theme1;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      & .tab_content {
+        & .send_Otp {
+          border-radius: 10px;
+          background-color: $theme1;
+          color: $white  !important;
+          box-shadow: 0px 25px 26px -14px rgba(239, 80, 54, 0.3);
+          font-size: 12px;
+        }
+      }
+
+      & .border_2_Side {
+        text-align: center !important;
+        border-width: 2px !important;
+        border-bottom: 1px solid #64646480 !important;
+        position: relative !important;
+
+        & span {
+          left: 50% !important;
+          top: 100% !important;
+          background-color: $white;
+          transform: translate(-50%, -50%) !important;
+          position: absolute !important;
+        }
+      }
+
+      & .icon_group {
+        & .icon_group_list {
+          width: 34px !important;
+          margin-top: 10px !important;
+          height: 34px !important;
+        }
+      }
+
+      & .text_color_change {
+        color: #646464 !important;
+        font-size: 10px !important;
+        line-height: 24px !important;
+        font-weight: 500 !important;
+
+        & .span_text {
+          & a {
+            font-style: italic;
+            font-size: 12px !important;
+            line-height: 19px !important;
+            color: #f15a22;
+          }
+        }
+      }
+
+      & .footer_bottam_text {
+        font-size: 11px;
+        font-weight: 400;
+        color: #646464;
+        line-height: 20px;
+      }
+    }
+
+    & .forget_password {
+      font-style: italic;
+      line-height: 24px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin login-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin login-mixin-max-md() {
+  .login_Page {
+    padding-top: 70px;
+    background-image: url(../images/image-35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+
+    & .login_side_Text {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 37px !important;
+      line-height: 47px !important;
+      color: $white;
+      text-align: center !important;
+      padding-bottom: unset !important;
+      padding-left: unset !important;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin login-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin login-mixin-max-xl() {}
+
+// **********************************************************************RIGISTER FORM ******************************************************************************
+
+.register {
+  padding-top: 70px;
+  background-image: url(../images/image-35.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+
+  & .register_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 55px;
+    color: $white;
+    text-align: end;
+    padding-bottom: 30px;
+    padding-left: 190px;
+  }
+
+  & .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 406px;
+    height: 100%;
+    margin-top: 70px;
+
+    & .form_Top_Heading {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    & .form_Top_Text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    & .reg_form {
+      & .form_text {
+        font-size: 14px;
+      }
+
+      & .image_fleg_form {
+        font-size: 14px;
+      }
+
+      & .select_2 {
+        & .select_list {}
+      }
+
+      & .footer_bottam_text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #646464;
+        line-height: 22px;
+      }
+
+      & .reg_Button {
+        border-radius: 10px;
+        background-color: $theme1;
+        color: $white  !important;
+        box-shadow: 0px 25px 26px -14px rgb(239 80 54 / 30%);
+      }
+
+      & .reg_bt_txt {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+
+        & .text_reg_col {
+          & a {
+            color: $theme1;
+            font-style: italic;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            line-height: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  & input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 80px $white inset !important;
+    -webkit-text-fill-color: $black  !important;
+    filter: invert(0);
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin register-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin register-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin register-mixin-min-lg() {
+  .register .register_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 55px;
+    color: $white;
+    text-align: end;
+    padding-bottom: 30px !important;
+    padding-left: 0px !important;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin register-mixin-min-xl() {
+  .register {
+    padding-top: 70px;
+    background-image: url(../images/image-35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+
+    & .register_side_Text {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 50px;
+      line-height: 55px;
+      color: $white;
+      text-align: end;
+      padding-bottom: 30px;
+      padding-left: 190px !important;
+    }
+
+    & .forms_web {
+      background-color: $white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 406px;
+      height: 90% !important;
+      margin-top: 70px;
+
+      & .form_Top_Heading {
+        font-weight: 500;
+        font-style: italic;
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      & .form_Top_Text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin register-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin register-mixin-max-xs() {
+  .register {
+    padding-top: 70px;
+    background-image: url(../images/image-35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+
+    & .register_side_Text {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 21px !important;
+      line-height: 32px !important;
+      color: $white;
+      text-align: center;
+      padding-bottom: unset;
+      padding-left: unset;
+    }
+
+    & .forms_web {
+      background-color: $white;
+      padding: 15px;
+      border-radius: 20px;
+      width: 100% !important;
+      height: 100%;
+      margin-top: 70px;
+
+      & .form_Top_Heading {
+        font-weight: 600;
+        font-style: italic;
+        font-size: 19px;
+        line-height: 29px;
+      }
+
+      & .form_Top_Text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      & .reg_form {
+        padding: 0px !important;
+
+        & .form_text {
+          font-size: 14px;
+        }
+
+        & .image_fleg_form {
+          font-size: 14px;
+          height: 40px;
+
+          & img {
+            width: 90%;
+          }
+        }
+
+        & .select_2 {
+          & .select_list {}
+        }
+
+        & .footer_bottam_text {
+          font-size: 11px;
+          font-weight: 500;
+          color: #646464;
+          line-height: 22px;
+        }
+
+        & .reg_Button {
+          border-radius: 10px;
+          background-color: $theme1;
+          color: $white  !important;
+          box-shadow: 0px 25px 26px -14px rgb(239 80 54 / 30%);
+          height: 35px !important;
+        }
+
+        & .reg_bt_txt {
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 20px;
+
+          & .text_reg_col {
+            & a {
+              color: $theme1;
+              font-style: italic;
+              font-weight: 600 !important;
+              font-size: 12px !important;
+              line-height: 23px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin register-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin register-mixin-max-md() {
+  .register {
+    padding-top: 70px;
+    background-image: url(../images/image-35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+
+    & .register_side_Text {
+      font-weight: 500;
+      font-style: italic;
+      font-size: 37px !important;
+      line-height: 47px !important;
+      color: $white;
+      text-align: center !important;
+      padding-bottom: unset !important;
+      padding-left: unset !important;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin register-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin register-mixin-max-xl() {}
+
+// *************************************************************************VERFIY*************************************************************************************
+
+.verfiy_password {
+  padding-top: 70px;
+  background-image: url(../images/image-35.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 152px;
+
+  & .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 55px;
+    color: $white;
+    text-align: end;
+    padding-bottom: 0px;
+    padding-left: 190px;
+  }
+
+  & .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 406px;
+    height: 80%;
+    margin-top: 181px;
+
+    & .form_Top_Heading {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 26px;
+      line-height: 42px;
+    }
+
+    & .form_Top_Text {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    & .reg_form {
+      & .form_text {
+        font-size: 14px;
+      }
+
+      & .image_fleg_form {
+        font-size: 14px;
+      }
+
+      & .select_2 {
+        & .select_list {}
+      }
+
+      & .footer_bottam_text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #646464;
+        line-height: 22px;
+      }
+
+      & .reg_Button {
+        border-radius: 10px;
+        background-color: $theme1;
+        color: $white  !important;
+        box-shadow: 0px 25px 26px -14px rgb(239 80 54 / 30%);
+      }
+
+      & .reg_bt_txt {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+
+        & .text_reg_col {
+          & a {
+            color: $theme1;
+            font-style: italic;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            line-height: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  & input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 80px $white inset !important;
+    -webkit-text-fill-color: $black  !important;
+    filter: invert(0);
+  }
+}
+
+.otp_number_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #646464;
+}
+
+.footer_bottam_text {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin verfiy_password-mixin-min-sm() {
+  .verfiy_side_Text {
+    font-weight: 600 Im;
+    font-style: italic;
+    font-size: 21px !important;
+    line-height: 32px !important;
+    color: $white;
+    text-align: center;
+    padding-bottom: unset;
+    padding-left: unset;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin verfiy_password-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin verfiy_password-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin verfiy_password-mixin-min-xl() {
+  .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 47px !important;
+    line-height: 54px !important;
+    color: $white;
+    text-align: end;
+    padding-bottom: 0px;
+    padding-left: 190px !important;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin verfiy_password-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin verfiy_password-mixin-max-xs() {
+  .verfiy_password .forms_web .form_Top_Heading {
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 19px !important;
+    line-height: 26px !important;
+  }
+
+  .verfiy_password .forms_web .form_Top_Text {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 21px !important;
+  }
+
+  .otp_number_text {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 19px !important;
+    color: #646464 !important;
+  }
+
+  .verfiy_side_Text {
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 21px !important;
+    line-height: 32px !important;
+    color: $white;
+    text-align: center !important;
+    padding-bottom: unset !important;
+    padding-left: unset !important;
+  }
+
+  .verfiy_password .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 100px !important;
+  }
+
+  .number {
+    font-size: 13px !important;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin verfiy_password-mixin-max-sm() {
+  .number {
+    font-size: 13px !important;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin verfiy_password-mixin-max-md() {
+  .verfiy_password .forms_web .form_Top_Heading {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 42px;
+  }
+
+  .verfiy_password .forms_web .form_Top_Text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 37px !important;
+    line-height: 47px !important;
+    color: $white;
+    text-align: center !important;
+    padding-bottom: unset !important;
+    padding-left: unset !important;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin verfiy_password-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin verfiy_password-mixin-max-xl() {}
+
+// *************************************************************************Reset Password*******************************************************************************
+
+.reset_password {
+  padding-top: 70px;
+  background-image: url(../images/image-35.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 152px;
+
+  & .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 47px;
+    line-height: 54px;
+    color: $white;
+    text-align: end;
+    padding-bottom: 0px;
+    padding-left: 190px;
+  }
+
+  & .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 406px;
+    height: 80%;
+    margin-top: 181px;
+
+    & .form_Top_Heading {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 26px;
+      line-height: 42px;
+    }
+
+    & .form_Top_Text {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    & .reg_form {
+      & .form_text {
+        font-size: 14px;
+      }
+
+      & .image_fleg_form {
+        font-size: 14px;
+      }
+
+      & .select_2 {
+        & .select_list {}
+      }
+
+      & .footer_bottam_text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #646464;
+        line-height: 22px;
+      }
+
+      & .reg_Button {
+        border-radius: 10px;
+        background-color: $theme1;
+        color: $white  !important;
+        box-shadow: 0px 25px 26px -14px rgb(239 80 54 / 30%);
+      }
+
+      & .reg_bt_txt {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+
+        & .text_reg_col {
+          & a {
+            color: $theme1;
+            font-style: italic;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            line-height: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  & input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 80px $white inset !important;
+    -webkit-text-fill-color: $black  !important;
+    filter: invert(0);
+  }
+}
+
+.otp_number_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #646464;
+}
+
+.footer_bottam_text {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin reset_password-mixin-min-sm() {
+  .verfiy_side_Text {
+    font-weight: 600 Im;
+    font-style: italic;
+    font-size: 21px !important;
+    line-height: 32px !important;
+    color: $white;
+    text-align: center;
+    padding-bottom: unset;
+    padding-left: unset;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin reset_password-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin reset_password-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin reset_password-mixin-min-xl() {
+  .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 47px !important;
+    line-height: 54px !important;
+    color: $white;
+    text-align: end;
+    padding-bottom: 0px !important;
+    padding-left: 190px !important;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin reset_password-mixin-min-xxl() {
+  .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 47px !important;
+    line-height: 54px !important;
+    color: $white;
+    text-align: end;
+    padding-bottom: 0px !important;
+    padding-left: 190px !important;
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin reset_password-mixin-max-xs() {
+  .reset_password .forms_web .form_Top_Heading {
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 19px !important;
+    line-height: 26px !important;
+  }
+
+  .reset_password .forms_web .form_Top_Text {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 21px !important;
+  }
+
+  .otp_number_text {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 19px !important;
+    color: #646464 !important;
+  }
+
+  .verfiy_side_Text {
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 21px !important;
+    line-height: 32px !important;
+    color: $white;
+    text-align: center !important;
+    padding-bottom: unset !important;
+    padding-left: unset !important;
+  }
+
+  .reset_password .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 100px !important;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin reset_password-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin reset_password-mixin-max-md() {
+  .reset_password .forms_web .form_Top_Heading {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 42px;
+  }
+
+  .reset_password .forms_web .form_Top_Text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 37px !important;
+    line-height: 47px !important;
+    color: $white;
+    text-align: center !important;
+    padding-bottom: unset !important;
+    padding-left: unset !important;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin reset_password-mixin-max-lg() {
+  .forgot_password {
+    & .verfiy_side_Text {
+      font-weight: 500 !important;
+      font-style: italic;
+      font-size: 50px !important;
+      line-height: 55px !important;
+      color: $white;
+      text-align: end;
+      padding-bottom: 0px;
+      padding-left: 80px !important;
+    }
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin reset_password-mixin-max-xl() {}
+
+// *******************************************************************************Forgot*********************************************************************************
+
+.forgot_password {
+  padding-top: 70px;
+  background-image: url(../images/image-35.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+
+  & .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 55px;
+    color: $white;
+    text-align: end;
+    padding-bottom: 0px;
+    padding-left: 190px;
+  }
+
+  & .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 406px;
+    margin-top: 246px;
+
+    & .form_Top_Heading {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 26px;
+      line-height: 42px;
+    }
+
+    & .form_Top_Text {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    & .reg_form {
+      & .form_text {
+        font-size: 14px;
+      }
+
+      & .image_fleg_form {
+        font-size: 14px;
+      }
+
+      & .select_2 {
+        & .select_list {}
+      }
+
+      & .footer_bottam_text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #646464;
+        line-height: 22px;
+      }
+
+      & .reg_Button {
+        border-radius: 10px;
+        background-color: $theme1;
+        color: $white  !important;
+        box-shadow: 0px 25px 26px -14px rgb(239 80 54 / 30%);
+      }
+
+      & .reg_bt_txt {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+
+        & .text_reg_col {
+          & a {
+            color: $theme1;
+            font-style: italic;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            line-height: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  & input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 80px $white inset !important;
+    -webkit-text-fill-color: $black  !important;
+    filter: invert(0);
+  }
+}
+
+.otp_number_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #646464;
+}
+
+.footer_bottam_text {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin forgot_password-mixin-min-sm() {
+  .verfiy_side_Text {
+    font-weight: 600 !important;
+    font-style: italic;
+    font-size: 21px !important;
+    line-height: 32px !important;
+    color: $white;
+    text-align: center;
+    padding-bottom: unset;
+    padding-left: unset;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin forgot_password-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin forgot_password-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin forgot_password-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin forgot_password-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin forgot_password-mixin-max-xs() {
+  .forgot_password .forms_web .form_Top_Heading {
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 19px !important;
+    line-height: 26px !important;
+  }
+
+  .forgot_password .forms_web .form_Top_Text {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 21px !important;
+  }
+
+  .otp_number_text {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 19px !important;
+    color: #646464 !important;
+  }
+
+  .verfiy_side_Text {
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 21px !important;
+    line-height: 32px !important;
+    color: $white;
+    text-align: center !important;
+    padding-bottom: unset !important;
+    padding-left: unset !important;
+  }
+
+  .forgot_password .forms_web {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 100px !important;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin forgot_password-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin forgot_password-mixin-max-md() {
+  .forgot_password .forms_web .form_Top_Heading {
+    font-weight: 600 !important;
+    font-style: italic;
+    font-size: 21px !important;
+    line-height: 42px !important;
+  }
+
+  .forgot_password .forms_web .form_Top_Text {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 23px !important;
+  }
+
+  .verfiy_side_Text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 37px !important;
+    line-height: 47px !important;
+    color: $white;
+    text-align: center !important;
+    padding-bottom: unset !important;
+    padding-left: unset !important;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin forgot_password-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin forgot_password-mixin-max-xl() {}
+
+// ****************************************************************************PRIVACY POLICY ***************************************************************************
+
+.privacy_Policy {
+  & .side_bar_text_p {
+    & .heading_text_Privacy {
+      font-size: 55px;
+      font-weight: 600;
+      line-height: 52px;
+      letter-spacing: 1px;
+      color: $black;
+      font-style: normal;
+    }
+
+    & .perograph_text_Privacy {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      color: $black;
+      letter-spacing: 1px;
+      color: $black;
+    }
+  }
+
+  & .privecy_heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  & .perograph_prvicey {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin privacy_Policy-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin privacy_Policy-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin privacy_Policy-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin privacy_Policy-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin privacy_Policy-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin privacy_Policy-mixin-max-xs() {
+  .privacy_Policy {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {
+        font-size: 30px !important;
+        line-height: 39px !important;
+        text-align: center !important;
+      }
+
+      & .perograph_text_Privacy {
+        font-size: 16px !important;
+        line-height: 27px !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+      }
+    }
+  }
+
+  .privecy_heading {
+    font-size: 19px !important;
+    line-height: 20px !important;
+  }
+
+  .perograph_prvicey {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .list_pr {
+    & li {
+      font-size: 14px !important;
+
+      & .list_image {
+        width: 70% !important;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin privacy_Policy-mixin-max-sm() {
+  .privacy_Policy {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {
+        font-size: 45px !important;
+        line-height: 45px !important;
+        text-align: center !important;
+      }
+
+      & .perograph_text_Privacy {
+        font-size: 18px !important;
+        line-height: 33px !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+      }
+    }
+
+    & .privecy_heading {
+      font-size: 21px !important;
+      line-height: 23px !important;
+    }
+
+    & .perograph_prvicey {
+      font-size: 14px !important;
+      line-height: 21px !important;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin privacy_Policy-mixin-max-md() {
+  .privacy_Policy {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {}
+
+      & .perograph_text_Privacy {
+        text-align: start !important;
+      }
+    }
+
+    & .privecy_heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    & .perograph_prvicey {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $black;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin privacy_Policy-mixin-max-lg() {
+  .privacy_Policy {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {
+        text-align: start !important;
+      }
+
+      & .perograph_text_Privacy {
+        text-align: start !important;
+        margin-bottom: unset !important;
+      }
+    }
+
+    & .privecy_heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    & .perograph_prvicey {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $black;
+    }
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin privacy_Policy-mixin-max-xl() {
+  .privacy_Policy {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {
+        text-align: start !important;
+      }
+
+      & .perograph_text_Privacy {
+        text-align: start !important;
+      }
+    }
+
+    & .privecy_heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    & .perograph_prvicey {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $black;
+    }
+  }
+}
+
+// ****************************************************************************TERMS AND CONDITION***************************************************************************
+
+.termscondition {
+  & .side_bar_text_p {
+    & .heading_text_Privacy {
+      font-size: 53px;
+      font-weight: 600;
+      line-height: 52px;
+      letter-spacing: 1px;
+    }
+
+    & .perograph_text_Privacy {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 1px;
+    }
+  }
+
+  & .termscondition_heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  & .perograph_prvicey {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin termscondition-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin termscondition-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin termscondition-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin termscondition-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin termscondition-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin termscondition-mixin-max-xs() {
+  .termscondition {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {
+        font-size: 19px;
+        line-height: 31px;
+      }
+
+      & .perograph_text_Privacy {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .termscondition_heading {
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  .perograph_prvicey {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .book_image {
+    & img {
+      width: 40% !important;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin termscondition-mixin-max-sm() {
+  .termscondition {
+    & .side_bar_text_p {
+      & .heading_text_Privacy {
+        font-size: 45px;
+        line-height: 45px;
+      }
+
+      & .perograph_text_Privacy {
+        font-size: 18px;
+        line-height: 33px;
+      }
+    }
+
+    & .termscondition_heading {
+      font-size: 21px;
+      line-height: 23px;
+    }
+
+    & .perograph_prvicey {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin termscondition-mixin-max-md() {
+  .termscondition {
+    & .privecy_heading {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    & .perograph_prvicey {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin termscondition-mixin-max-lg() {
+  .termscondition {
+    & .termscondition_heading {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin termscondition-mixin-max-xl() {
+  .termscondition {
+    & .termscondition_heading {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    & .perograph_prvicey {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+// ****************************************************************************Contact us***************************************************************************
+
+.contact-us {
+  & .contact_Card {
+    border-radius: 20px;
+
+    & .card_body {
+      border-radius: 15px;
+
+      & .card-title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 39.6px;
+        color: $theme1;
+      }
+
+      & .list_social {
+        & .ul_list {
+          & .list_type {
+            & a {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 17.6px;
+
+              & .span_tag {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 17.6px;
+
+                & img {
+                  width: 5%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin contact-us-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin contact-us-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin contact-us-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin contact-us-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin contact-us-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin contact-us-mixin-max-xs() {
+  .contact-us {
+    & .contact_Card {
+      & .card_body {
+        & .card-title {
+          font-size: 20px;
+          line-height: 20.6px;
+        }
+
+        & .list_social {
+          & .ul_list {
+            & .list_type {
+              & a {
+                & .span_tag {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin contact-us-mixin-max-sm() {
+  .contact-us {
+    & .contact_Card {
+      border-radius: 20px;
+
+      & .card_body {
+        & .card-title {
+          font-size: 26px;
+          line-height: 36.6px;
+        }
+
+        & .list_social {
+          & .ul_list {
+            & .list_type {
+              & a {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17.6px;
+
+                & .span_tag {
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 17.6px;
+
+                  & img {
+                    width: 5%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin contact-us-mixin-max-md() {
+  .contact-us {
+    & .contact_Card {
+      & .card_body {
+        box-shadow: 0px 0px 10px #eee;
+
+        & .card-title {}
+
+        & .list_social {
+          & .ul_list {
+            & .list_type {
+              & a {
+                & .span_tag {
+                  & img {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin contact-us-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin contact-us-mixin-max-xl() {}
+
+// ************************************************************************* SERVICES PAGE************************************************************************
+
+.services {
+  & .serviceOuter {
+    background-color: $white;
+    border-radius: 75px;
+    padding: 65px 16px;
+
+    & .image1 {
+      position: absolute;
+      left: -10px;
+      bottom: 30px;
+    }
+
+    & .ratingCrad {
+      border-radius: 20px;
+
+      & .cardText {
+        & span {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .imgIcon {
+      width: 64px;
+      height: 64px;
+    }
+
+    & .serviceType {
+      & h4 {
+        &.title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      & span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.mb-90px {
+  margin-bottom: 90px !important;
+}
+
+.mb-30px {
+  margin-bottom: 30px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin services-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin services-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin services-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin services-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin services-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin services-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin services-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin services-mixin-max-md() {
+  .services {
+    & .serviceOuter {
+      border-radius: 50px;
+      padding: 30px;
+
+      & .image1 {
+        width: 200px;
+        position: unset;
+        left: unset;
+        bottom: unset;
+
+        & img {
+          width: 100%;
+        }
+      }
+
+      & .imgIcon {
+        width: 44px;
+        height: 44px;
+      }
+
+      & .serviceType {
+        & h4 {
+          &.title {
+            font-size: 16px;
+            margin: 0;
+          }
+        }
+
+        & span {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .mb-md-30px {
+    margin-bottom: 30px !important;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin services-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin services-mixin-max-xl() {}
+
+
+
+// design by suresh kumawat end
+
+// design by suresh suman 
+// subscription page css start
+.subscription-page {
+  background: url('../../assets/images/image-45.png');
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center;
+
+  & .pageHeading {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  & .headingDes {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  & .card {
+    color: #121016 !important;
+    background: #ffffff !important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    & .card-header {
+      padding: 30px;
+      padding-bottom: 0;
+
+      & .cardHeading {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 6px;
+      }
+
+      & .planPrice {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      & .monthFree {
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E4E5E9;
+      }
+    }
+
+    & .card-body {
+      padding: 30px;
+
+      & .description {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    & .card-footer {
+      padding: 30px;
+      padding-top: 0;
+
+      & .btn {
+        color: #ffffff;
+        background: #241840;
+        border-radius: 10px;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-style: italic;
+        font-size: 14px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $theme2;
+          color: white;
+        }
+      }
+    }
+
+    &:hover,
+    &.active {
+      color: #ffffff !important;
+      background: #7957CE !important;
+      transform: scale3d(1.02, 1.02, 1);
+
+      & .cardHeading {
+        color: #D1BEFF;
+      }
+
+      & .btn {
+        color: #7957CE;
+        background: #ffffff;
+      }
+    }
+  }
+
+  & .bottomThanks {
+    color: #EF5036;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin subscription-page-mixin-min-sm() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin subscription-page-mixin-min-md() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin subscription-page-mixin-min-lg() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin subscription-page-mixin-min-xl() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin subscription-page-mixin-min-xxl() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin subscription-page-mixin-max-xs() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin subscription-page-mixin-max-sm() {
+
+  .subscription-page {
+    & .pageHeading {
+      font-size: 24px;
+    }
+
+    & .headingDes {
+      font-size: 14px;
+    }
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+        transform: none;
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin subscription-page-mixin-max-md() {
+
+  .subscription-page {
+    & .pageHeading {
+      font-size: 26px;
+    }
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {
+          font-size: 16px;
+        }
+
+        & .planPrice {
+          font-size: 28px;
+        }
+
+        & .monthFree {
+          font-size: 13px;
+        }
+      }
+
+      & .card-body {
+
+        & .description {
+          font-size: 13px;
+        }
+      }
+
+      & .card-footer {
+
+        & .btn {
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin subscription-page-mixin-max-lg() {
+
+  .subscription-page {
+    & .pageHeading {
+      font-size: 28px;
+    }
+
+    & .headingDes {
+      font-size: 16px;
+    }
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin subscription-page-mixin-max-xl() {
+
+  .subscription-page {
+    & .pageHeading {}
+
+    & .headingDes {}
+
+    & .card {
+
+      & .card-header {
+
+        & .cardHeading {}
+
+        & .planPrice {}
+
+        & .monthFree {}
+      }
+
+      & .card-body {
+
+        & .description {}
+      }
+
+      & .card-footer {
+
+        & .btn {}
+      }
+
+      &:hover,
+      &.active {
+
+        & .cardHeading {}
+
+        & .btn {}
+      }
+    }
+  }
+}
+
+// design by suresh suman end
+
+
+
+@mixin services-mixin-max-xl() {}
+
+// ******************************************************************FINAL-1 PAGE *************************************************************************************
+.finalHeroSection {
+  & .leftSide {
+    position: relative;
+    z-index: 1;
+
+    & h1 {
+      &.fianlHeroHeading {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: "Roboto";
+        line-height: 70px;
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    & .imgIcon {
+      width: 44px;
+      height: 44px;
+    }
+
+    & .serviceType {
+      & .title {
+        font-size: 20px;
+      }
+
+      & span {
+        font-size: 16px;
+      }
+    }
+
+    & .viewAll {
+      width: 100px;
+      height: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+      border: 1px solid $theme1;
+      border-radius: 50%;
+      color: $theme1;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: -100px;
+    }
+  }
+
+  & .heroImgOuter {
+    width: 540px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin finalHeroSection-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin finalHeroSection-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin finalHeroSection-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin finalHeroSection-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin finalHeroSection-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin finalHeroSection-mixin-max-xs() {
+  .finalHeroSection {
+    & .leftSide {
+      & h1 {
+        &.fianlHeroHeading {
+          font-size: 32px;
+        }
+      }
+
+      & p {}
+
+      .appDownloadBtn {
+        width: 42%;
+      }
+
+      & .imgIcon {}
+
+      & .serviceType {
+        & .title {}
+
+        & span {}
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin finalHeroSection-mixin-max-sm() {
+  .finalHeroSection {
+    & .leftSide {
+      & h1 {
+        &.fianlHeroHeading {
+          font-size: 40px;
+        }
+      }
+
+      & p {
+        font-size: 16px;
+      }
+
+      & .imgIcon {}
+
+      & .serviceType {
+        & .title {}
+
+        & span {}
+      }
+
+      & .viewAll {}
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin finalHeroSection-mixin-max-md() {
+  .finalHeroSection {
+    & .leftSide {
+      & h1 {
+        &.fianlHeroHeading {
+          font-size: 48px;
+        }
+      }
+
+      & p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      & .imgIcon {
+        width: 44px;
+        height: 44px;
+      }
+
+      & .serviceType {
+        & .title {
+          font-size: 18px;
+        }
+
+        & span {
+          font-size: 14px;
+        }
+      }
+
+      & .viewAll {
+        width: 80px;
+        height: 80px;
+        right: 0;
+      }
+    }
+
+    & .heroImgOuter {
+      position: unset !important;
+      width: 60%;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin finalHeroSection-mixin-max-lg() {
+  .finalHeroSection {
+    & .leftSide {
+      & h1 {
+        &.fianlHeroHeading {
+          font-size: 48px;
+        }
+      }
+
+      & p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      & .imgIcon {
+        width: 44px;
+        height: 44px;
+      }
+
+      & .serviceType {
+        & .title {
+          font-size: 18px;
+        }
+
+        & span {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .heroImgOuter {}
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin finalHeroSection-mixin-max-xl() {}
+
+// ******************************************************************ABOUT-US**************************************************************************************
+.aboutUs {
+  & .aboutHeading {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "GraphikMedium" !important;
+  }
+
+  & .imgOuter {
+    // height: 460px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  & p {
+    font-size: 16px;
+    font-family: "GraphikRegular" !important;
+    color: #121016;
+    margin: 0;
+  }
+
+  & .aboutSubHeading {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "GraphikMedium" !important;
+  }
+
+  & .stories {
+    margin-top: -100px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+
+    &.stories:after {
+      content: " ";
+      display: block;
+      width: 102%;
+      height: 100px;
+      border-bottom: 2px solid $theme1;
+      border-right: 2px solid $theme1;
+      position: absolute;
+      bottom: -10px;
+      z-index: -1;
+    }
+  }
+
+  & .demoTxt {
+    font-size: 36px;
+    font-family: "GraphikRegular";
+  }
+
+  & .learnMoreBtn {
+    font-size: 14px;
+    font-family: "GraphikRegularItalic" !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin aboutUs-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin aboutUs-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin aboutUs-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin aboutUs-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin aboutUs-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin aboutUs-mixin-max-xs() {
+  .aboutUs {
+    & .aboutHeading {
+      font-size: 14px;
+    }
+
+    & .goToBottom {
+      width: 60px;
+    }
+
+    & .imgOuter {
+      height: unset;
+
+      & img {}
+    }
+
+    & p {}
+
+    & .aboutSubHeading {
+      font-size: 15px;
+    }
+
+    & .stories {
+      margin-top: 16px;
+
+      &.stories:after {
+        width: 100%;
+      }
+    }
+
+    & .demoTxt {
+      font-size: 16px;
+    }
+
+    & .learnMoreBtn {}
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin aboutUs-mixin-max-sm() {
+  .aboutUs {
+    & .aboutHeading {}
+
+    & .imgOuter {
+      height: 200px;
+
+      & img {}
+    }
+
+    & p {}
+
+    & .aboutSubHeading {}
+
+    & .stories {
+      margin-top: 16px;
+
+      &.stories:after {
+        width: 100%;
+      }
+    }
+
+    & .demoTxt {
+      font-size: 18px;
+    }
+
+    & .learnMoreBtn {}
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin aboutUs-mixin-max-md() {
+  .aboutUs {
+    & .aboutHeading {
+      font-size: 20px;
+    }
+
+    & .goToBottom {
+      width: 90px;
+      display: block;
+    }
+
+    & .imgOuter {
+      height: 350px;
+
+      & img {}
+    }
+
+    & p {}
+
+    & .aboutSubHeading {}
+
+    & .stories {
+      &.stories:after {}
+    }
+
+    & .demoTxt {}
+
+    & .learnMoreBtn {}
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin aboutUs-mixin-max-lg() {
+  .aboutUs {
+    & .aboutHeading {
+      font-size: 24px;
+    }
+
+    & .goToBottom {
+      width: 90px;
+      display: block;
+    }
+
+    & .imgOuter {
+      height: 380px;
+
+      & img {}
+    }
+
+    & p {
+      font-size: 14px;
+    }
+
+    & .aboutSubHeading {
+      font-size: 20px;
+    }
+
+    & .stories {
+      &.stories:after {
+        width: 104%;
+      }
+    }
+
+    & .demoTxt {
+      font-size: 24px;
+    }
+
+    & .learnMoreBtn {}
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin aboutUs-mixin-max-xl() {}
+
+// ************************************************************************FEATURE PAGE************************************************************************************
+
+.featuers-page {
+  & .featureHero {
+    & .leftSide {
+      & .featureHeading {
+        font-size: 55px;
+        font-weight: bold;
+        font-family: "GraphikRegular";
+        width: 90%;
+        line-height: 65px;
+      }
+
+      & .featureAbout {
+        font-size: 16px;
+        font-weight: 400;
+        width: 88%;
+        margin-bottom: 0;
+      }
+    }
+
+    & .rightSide {
+      height: 440px;
+
+      & .imgOuter {
+        top: 0;
+        right: -9%;
+        bottom: 0;
+        height: 100%;
+        margin: auto;
+        width: 100%;
+
+        & img {
+          width: auto;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  & .featurePerformance {
+    background-image: url(../../assets/images/image-213.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    position: relative;
+    z-index: 0;
+
+    & .mainHeading {
+      font-size: 50px;
+      line-height: 59px;
+      font-weight: bold;
+      margin: 0 130px;
+    }
+
+    & .leftSide {
+      & span {
+        &.largeNumber {
+          font-family: "GraphikMedium";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 120px;
+          line-height: 148px;
+          color: #f4f4f4;
+          opacity: 0.75;
+        }
+      }
+
+      & .featureHeading {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "GraphikRegular";
+        line-height: 46px;
+      }
+
+      & .featureAbout {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+
+    & .rightSide {
+      & .imgOuter {
+        width: 100%;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  & .startTracking {
+    position: relative;
+    background-color: #121016;
+    height: 560px;
+
+    & .bg-line {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+
+      & img {
+        position: relative;
+        z-index: 3;
+      }
+
+      & .backdrope {
+        width: 396px;
+        height: 213px;
+        position: absolute;
+        right: 0;
+        bottom: 55px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        z-index: 2;
+        margin: auto;
+        border-radius: 20px;
+      }
+    }
+
+    & .leftSide {
+      & .heading {
+        font-size: 40px;
+        color: $white;
+        font-weight: 400;
+        font-family: "GraphikRegular";
+        line-height: normal;
+      }
+      & .trackingTxt {
+        font-family: "GraphikLight";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        opacity: 0.75;
+        margin-right: 20%;
+      }
+    }
+
+    & .rightSide {
+      position: relative;
+      z-index: 2;
+
+      .trackImg {
+        width: 80%;
+        margin-top: -160px;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin featuers-page-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin featuers-page-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin featuers-page-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin featuers-page-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin featuers-page-mixin-min-xxl() {
+  .featuers-page {
+    & .startTracking {
+      position: relative;
+      background-color: $black;
+      height: 560px;
+
+      & .bg-line {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+
+        & img {
+          position: relative;
+          z-index: 3;
+        }
+
+        & .backdrope {
+          width: 370px;
+          height: 200px;
+          position: absolute;
+          right: 0;
+          bottom: 50px;
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(20px);
+          z-index: 2;
+          margin: auto;
+          border-radius: 20px;
+        }
+      }
+
+      & .leftSide {
+        & .heading {
+          font-size: 40px;
+          color: $white;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        & .trackingTxt {
+          font-style: normal;
+          font-weight: 100;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.01em;
+          color: $white;
+          opacity: 0.75;
+          margin-right: 30%;
+        }
+      }
+
+      & .rightSide {
+        position: relative;
+        z-index: 2;
+
+        .trackImg {
+          width: 80%;
+          margin-top: -160px;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin featuers-page-mixin-max-xs() {
+  .featuers-page {
+    & .featureHero {
+      & .leftSide {
+        & .featureHeading {
+          font-size: 16px;
+        }
+
+        & .featureAbout {}
+      }
+
+      & .rightSide {
+        & .imgOuter {
+          & img {}
+        }
+      }
+    }
+
+    & .featurePerformance {
+      background-image: none;
+
+      & .mainHeading {
+        font-size: 20px;
+      }
+
+      & .leftSide {
+        & .featureHeading {
+          font-size: 16px;
+        }
+
+        & .featureAbout {}
+      }
+
+      & .rightSide {
+        & .imgOuter {
+          & img {}
+        }
+      }
+    }
+    & .startTracking {
+      & .bg-line {
+        margin-left: -20px;
+        margin-top: -10px;
+        & img {
+        }
+        & .backdrope {
+        }
+      }
+      & .leftSide {
+        & span {
+          &.largeNumber {
+          }
+        }
+        & .heading {
+          font-size: 16px;
+        }
+        & .trackingTxt {
+          font-size: 14px;
+        }
+      }
+      & .rightSide {
+        & .trackImg {
+          width: 60%;
+          margin-top: -80px;
+          margin-right: auto;
+        }
+      }
+    }
+    & .socialNetwork {
+      & .featuresMainHeading {
+        font-size: 20px;
+        margin: 0;
+      }
+      & .leftSide {
+        .trackImg {
+          margin: auto;
+          width: 80%;
+        }
+      }
+      & .rightSide {
+        & .heading {
+          font-size: 16px;
+        }
+        & span {
+          &.largeNumber {
+          }
+        }
+        & .trackingTxt {
+        }
+      }
+    }
+
+    & .adventure {
+      & .adventureImgouter {
+        &.smallImg {
+          height: 100%;
+          & img {
+          }
+        }
+      }
+      & .adventuretxt {
+        & .heading {
+          font-size: 15px;
+        }
+        & .text {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin featuers-page-mixin-max-sm() {
+  .featuers-page {
+    & .featureHero {
+      & .leftSide {
+        & .featureHeading {
+          font-size: 25px;
+        }
+
+        & .featureAbout {
+          font-size: 14px;
+        }
+      }
+
+      & .rightSide {
+        & .imgOuter {
+          width: 80%;
+
+          & img {}
+        }
+      }
+    }
+
+    & .featurePerformance {
+      & .featuresMainHeading {
+        font-size: 30px;
+        margin: 0;
+      }
+
+      & .leftSide {
+        & .featureHeading {
+          font-size: 25px;
+        }
+
+        & .featureAbout {
+          font-size: 14px;
+        }
+      }
+
+      & .rightSide {
+        & .imgOuter {
+          width: 70%;
+
+          & img {}
+        }
+      }
+    }
+    & .startTracking {
+      & .bg-line {
+        margin-left: -170px;
+        margin-top: -110px;
+        & img {
+        }
+        & .backdrope {
+          width: 184px;
+          height: 98px;
+          bottom: 26px;
+          border-radius: 10px;
+        }
+      }
+      & .leftSide {
+        & span {
+          &.largeNumber {
+          }
+        }
+        & .heading {
+          font-size: 24px;
+        }
+        & .trackingTxt {
+        }
+      }
+      & .rightSide {
+        & .trackImg {
+          width: 60%;
+          margin-top: -80px;
+        }
+      }
+    }
+    & .socialNetwork {
+      & .featuresMainHeading {
+        font-size: 30px;
+        margin: 0;
+      }
+      & .leftSide {
+        .trackImg {
+          margin: auto;
+          width: 80%;
+        }
+      }
+      & .rightSide {
+        & .heading {
+        }
+        & span {
+          &.largeNumber {
+            font-size: 120px;
+            line-height: normal;
+          }
+        }
+        & .trackingTxt {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin featuers-page-mixin-max-md() {
+  .featuers-page {
+    & .featureHero {
+      & .leftSide {
+        & .featureHeading {
+          font-size: 24px;
+          width: 100%;
+          line-height: normal;
+        }
+
+        & .featureAbout {
+          width: 100%;
+        }
+      }
+
+      & .rightSide {
+        height: unset;
+
+        & .imgOuter {
+          position: unset !important;
+
+          & img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    & .featurePerformance {
+      & .featuresMainHeading {
+        font-size: 34px;
+        line-height: normal;
+        margin: 0 10px;
+      }
+
+      & .leftSide {
+        & .featureHeading {
+          font-size: 24px;
+          line-height: normal;
+        }
+
+        & span {
+          &.largeNumber {
+            font-size: 90px;
+            line-height: normal;
+          }
+        }
+
+        & .featureAbout {
+          width: 100%;
+        }
+      }
+
+      & .rightSide {
+        height: unset;
+
+        & .imgOuter {
+          & img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    & .startTracking {
+      & .bg-line {
+        margin-left: -170px;
+        margin-top: -110px;
+        & img {
+        }
+        & .backdrope {
+          width: 246px;
+          height: 135px;
+          bottom: 33px;
+          border-radius: 14px;
+        }
+      }
+      & .leftSide {
+        & span {
+          &.largeNumber {
+            font-size: 120px;
+            line-height: normal;
+            position: absolute;
+            top: -40px;
+          }
+        }
+        & .heading {
+          font-size: 24px;
+        }
+        & .trackingTxt {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      & .rightSide {
+        & .trackImg {
+          width: 100%;
+          margin-top: -70px;
+        }
+      }
+    }
+    & .socialNetwork {
+      & .featuresMainHeading {
+        font-size: 34px;
+        line-height: normal;
+        margin: 0 10px;
+      }
+      & .leftSide {
+        .trackImg {
+        }
+      }
+      & .rightSide {
+        & .heading {
+          font-size: 24px;
+          line-height: normal;
+        }
+        & span {
+          &.largeNumber {
+            font-size: 120px;
+            line-height: normal;
+          }
+        }
+        & .trackingTxt {
+          font-size: 15px;
+          margin-right: 0;
+        }
+      }
+    }
+    & .adventure {
+      & .adventureImgouter {
+        &.smallImg {
+          height: 100%;
+          & img {
+          }
+        }
+      }
+      & .adventuretxt {
+        & .heading {
+        }
+        & .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin featuers-page-mixin-max-lg() {
+  .featuers-page {
+    & .featureHero {
+      & .leftSide {
+        & .featureHeading {
+          font-size: 42px;
+        }
+
+        & .featureAbout {
+          width: 100%;
+        }
+      }
+
+      & .rightSide {
+        height: unset !important;
+
+        & .imgOuter {
+          position: unset !important;
+
+          & img {
+            width: 100% !important;
+            height: unset !important;
+          }
+        }
+      }
+    }
+
+    & .featurePerformance {
+      & .featuresMainHeading {
+        font-size: 40px;
+      }
+
+      & .leftSide {
+        & .featureHeading {
+          font-size: 35px;
+          line-height: normal;
+        }
+
+        & .featureAbout {
+          width: 100%;
+        }
+      }
+
+      & .rightSide {
+        height: unset;
+
+        & .imgOuter {
+          & img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    & .startTracking {
+      & .bg-line {
+        width: 76%;
+        left: 0;
+        bottom: 50px;
+
+        & img {}
+
+        & .backdrope {
+          width: 332px;
+          height: 178px;
+          bottom: 46px;
+        }
+      }
+
+      & .leftSide {
+        & .heading {}
+
+        & .trackingTxt {}
+      }
+
+      & .rightSide {
+        .trackImg {
+          width: 84%;
+          margin-top: -130px;
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin featuers-page-mixin-max-xl() {
+}
+
+@media (max-width: 360px) {
+  .adventure {
+    & .col-6 {
+      width: 100%;
+      padding: 0 12px !important;
+      margin-top: 16px;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      &:nth-child(3) {
+        order: 3 !important;
+      }
+      & .adventuretxt {
+        & .heading {
+          font-size: 18px !important;
+        }
+        & .text {
+        }
+      }
+    }
+    & .adventuretxt {
+      & .heading {
+        font-size: 18px;
+      }
+      & .text {
+      }
+    }
+  }
+}
+
+// *********************************************************************CAREER ***********************************************************************************
+.career {
+  & .top_Heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  & .card_marketing {
+    background: $white;
+    box-shadow: 0px 4px 149px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    & .card_body {
+      & .card_heading {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      & .card_middle_heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      & .card_button {
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0px 25px 26px -14px rgba(239, 80, 54, 0.3);
+        border-color: #646464;
+        color: $black;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background-color: $theme1;
+          border-color: $theme1;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin career-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin career-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin career-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin career-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin career-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin career-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin career-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin career-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin career-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin career-mixin-max-xl() {}
+
+// *********************************************************************CAREER DETAILS***************************************************************************
+.career-details {
+  & .top_Heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  & .card_marketing {
+    background: $white;
+    box-shadow: 0px 4px 149px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    & .card_body {
+      & .card_heading {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      & .card_middle_heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      & .card_button {
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0px 25px 26px -14px rgba(239, 80, 54, 0.3);
+        border-color: #646464;
+        color: $black;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background-color: $theme1;
+          color: $white;
+          border-color: $theme1;
+        }
+      }
+    }
+  }
+
+  & .bootam_card {
+    box-shadow: 0px 4px 149px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    & .text_upper_heading {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    & .perograph_career_details {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    & .list {
+      & .list_heading {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      & .list_p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+  }
+}
+.dialog_modal {
+  & .content_moadal {
+    width: 80%;
+    & .header_modal {
+      box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.05);
+      & .modal_heading {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+    & .body_modal {
+      & .modal_form {
+        & .control_form {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          
+        }
+        & .labal_form {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 15px;
+        }
+        & .upload_image_type {
+          img {
+          }
+          & .type_name_image {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+          }
+          & .mb_size {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+          }
+        }
+        & .drag_content {
+          & .input_file {
+            padding: 24px;
+            background: rgba(228, 229, 233, 0.1);
+            border: 2px dashed #e4e5e9;
+            border-radius: 10px;
+            cursor: pointer;
+            border-top-left-radius: 10px !important;
+            border-bottom-left-radius: 10px !important;
+
+            & .drag_Heading {
+              & .drag_image {
+              }
+              & .dg_hed {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+              }
+              & .sizeimage {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 13px;
+                color: #a9a9a9;
+              }
+              & .image_type {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 13px;
+                color: #a9a9a9;
+              }
+            }
+          }
+        }
+        & .submit_button {
+          width: 30%;
+          font-size: 14px;
+          font-weight: 600;
+          box-shadow: 0px 20px 26px -14px rgba(36, 24, 64, 0.3);
+          &:hover {
+            background-color: $theme2 !important;
+            color: $white !important;
+            border-color: $theme2 !important;
+           
+          }
+        }
+      }
+    }
+  }
+}
+.susses_modal {
+  padding: 24px;
+  & .sussefylly_message {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+  }
+ 
+  & .sussfully_text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  & .sussfully_button {
+    font-size: 14px;
+    font-weight: 600;
+    width: 20%;
+    box-shadow: 0px 20px 26px -14px rgba(36, 24, 64, 0.3);
+    &:hover {
+      background-color: $theme2 !important;
+      color: $white !important;
+      border-color: $theme2 !important;
+     
+    }
+  }
+ 
+}
+.iti.iti--allow-dropdown {
+  width: 100%;
+}
+
+.iti__flag {background-image: url("../libs/intel-input/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../libs/intel-input/flags@2x.png");}
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin career-details-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin career-details-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin career-details-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin career-details-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin career-details-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin career-details-mixin-max-xs() {
+  .career-details {
+    & .top_Heading {
+      font-size: 14px;
+    }
+
+    & .card_marketing {
+      & .card_body {
+        & .card_heading {
+          font-size: 14px;
+        }
+
+        & .card_middle_heading {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .bootam_card {
+      & .text_upper_heading {
+        font-size: 16px;
+      }
+
+      & .perograph_career_details {
+        font-size: 14px;
+      }
+      & .list {
+        & .list_heading {
+          font-size: 14px;
+        }
+        & .list_p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .dialog_modal {
+    & .content_moadal {
+      width: 100%;
+      & .header_modal {
+        & .modal_heading {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      & .body_modal {
+        & .modal_form {
+          & .control_form {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            color: #a9a9a9;
+          }
+          & .labal_form {
+            font-size: 10px;
+            line-height: 0px;
+            padding: 7px 2px;
+          }
+          & .upload_image_type {
+            img {
+            }
+            & .type_name_image {
+              font-size: 11px;
+            }
+            & .mb_size {
+              font-size: 11px;
+            }
+          }
+          & .drag_content {
+            & .input_file {
+              padding: 24px;
+              background: rgba(228, 229, 233, 0.1);
+              border: 2px dashed #e4e5e9;
+              border-radius: 10px;
+              cursor: pointer;
+              border-top-left-radius: 10px !important;
+              border-bottom-left-radius: 10px !important;
+
+              & .drag_Heading {
+                & .drag_image {
+                }
+                & .dg_hed {
+                  font-size: 13px;
+                }
+                & .sizeimage {
+                  line-height: 16px;
+                }
+                & .image_type {
+                }
+              }
+            }
+          }
+          & .submit_button {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  .susses_modal {
+    padding: 24px;
+    & .sussefylly_message {
+      font-size: 14px;
+      line-height: 30px;
+    }
+   
+    & .sussfully_text {
+      font-size: 14px;
+    
+    }
+    & .sussfully_button {
+      width: 40%;
+     
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin career-details-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin career-details-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin career-details-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin career-details-mixin-max-xl() {}
+
+// *********************************************************************INCLUDE CSS ******************************************************************************
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  @include hero_Section-mixin-min-sm();
+  @include services-mixin-min-sm();
+  // @include inner_pages_banner-mixin-min-sm();
+  @include subscription-page-mixin-min-sm();
+  @include login-mixin-min-sm();
+  @include forgot_password-mixin-min-sm();
+  @include reset_password-mixin-min-sm();
+  @include finalHeroSection-mixin-min-sm();
+  @include aboutUs-mixin-min-sm();
+  @include featuers-page-mixin-min-sm();
+  @include verfiy_password-mixin-min-sm();
+  @include register-mixin-min-sm();
+  @include privacy_Policy-mixin-min-sm();
+  @include termscondition-mixin-min-sm();
+  @include contact-us-mixin-min-sm();
+  @include career-mixin-min-sm();
+  @include career-details-mixin-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include hero_Section-mixin-min-md();
+  @include services-mixin-min-md();
+  // @include inner_pages_banner-mixin-min-md();
+  @include subscription-page-mixin-min-md();
+  @include login-mixin-min-md();
+  @include forgot_password-mixin-min-md();
+  @include reset_password-mixin-min-md();
+  @include finalHeroSection-mixin-min-md();
+  @include aboutUs-mixin-min-md();
+  @include featuers-page-mixin-min-md();
+  @include verfiy_password-mixin-min-md();
+  @include register-mixin-min-md();
+  @include privacy_Policy-mixin-min-md();
+  @include termscondition-mixin-min-md();
+  @include contact-us-mixin-min-md();
+  @include career-mixin-min-md();
+  @include career-details-mixin-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include hero_Section-mixin-min-lg();
+  @include services-mixin-min-lg();
+  // @include inner_pages_banner-mixin-min-lg();
+  @include subscription-page-mixin-min-lg();
+  @include login-mixin-min-lg();
+  @include forgot_password-mixin-min-lg();
+  @include reset_password-mixin-min-lg();
+  @include finalHeroSection-mixin-min-lg();
+  @include aboutUs-mixin-min-lg();
+  @include featuers-page-mixin-min-lg();
+  @include verfiy_password-mixin-min-lg();
+  @include register-mixin-min-lg();
+  @include privacy_Policy-mixin-min-lg();
+  @include termscondition-mixin-min-lg();
+  @include contact-us-mixin-min-lg();
+  @include career-mixin-min-lg();
+  @include career-details-mixin-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include hero_Section-mixin-min-xl();
+  @include services-mixin-min-xl();
+  // @include inner_pages_banner-mixin-min-xl();
+  @include subscription-page-mixin-min-xl();
+  @include login-mixin-min-xl();
+  @include forgot_password-mixin-min-xl();
+  @include reset_password-mixin-min-xl();
+  @include finalHeroSection-mixin-min-xl();
+  @include aboutUs-mixin-min-xl();
+  @include featuers-page-mixin-min-xl();
+  @include verfiy_password-mixin-min-xl();
+  @include register-mixin-min-xl();
+  @include privacy_Policy-mixin-min-xl();
+  @include termscondition-mixin-min-xl();
+  @include contact-us-mixin-min-xl();
+  @include career-mixin-min-xl();
+  @include career-details-mixin-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include hero_Section-mixin-min-xxl();
+  @include services-mixin-min-xxl();
+  // @include inner_pages_banner-mixin-min-xxl();
+  @include subscription-page-mixin-min-xxl();
+  @include login-mixin-min-xxl();
+  @include forgot_password-mixin-min-xxl();
+  @include reset_password-mixin-min-xxl();
+  @include finalHeroSection-mixin-min-xxl();
+  @include aboutUs-mixin-min-xxl();
+  @include featuers-page-mixin-min-xxl();
+  @include verfiy_password-mixin-min-xxl();
+  @include register-mixin-min-xxl();
+  @include privacy_Policy-mixin-min-xxl();
+  @include termscondition-mixin-min-xxl();
+  @include contact-us-mixin-min-xxl();
+  @include career-mixin-min-xxl();
+  @include career-details-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  @include hero_Section-mixin-max-xl();
+  @include services-mixin-max-xl();
+  // @include inner_pages_banner-mixin-max-xl();
+  @include subscription-page-mixin-max-xl();
+  @include login-mixin-max-xl();
+  @include forgot_password-mixin-max-xl();
+  @include reset_password-mixin-max-xl();
+  @include finalHeroSection-mixin-max-xl();
+  @include aboutUs-mixin-max-xl();
+  @include featuers-page-mixin-max-xl();
+  @include verfiy_password-mixin-max-xl();
+  @include register-mixin-max-xl();
+  @include privacy_Policy-mixin-max-xl();
+  @include termscondition-mixin-max-xl();
+  @include contact-us-mixin-max-xl();
+  @include career-mixin-max-xl();
+  @include career-details-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include hero_Section-mixin-max-lg();
+  @include services-mixin-max-lg();
+  // @include inner_pages_banner-mixin-max-lg();
+  @include subscription-page-mixin-max-lg();
+  @include login-mixin-max-lg();
+  @include forgot_password-mixin-max-lg();
+  @include reset_password-mixin-max-lg();
+  @include finalHeroSection-mixin-max-lg();
+  @include aboutUs-mixin-max-lg();
+  @include featuers-page-mixin-max-lg();
+  @include verfiy_password-mixin-max-lg();
+  @include register-mixin-max-lg();
+  @include privacy_Policy-mixin-max-lg();
+  @include termscondition-mixin-max-lg();
+  @include contact-us-mixin-max-lg();
+  @include career-mixin-max-lg();
+  @include career-details-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include hero_Section-mixin-max-md();
+  @include services-mixin-max-md();
+  // @include inner_pages_banner-mixin-max-md();
+  @include subscription-page-mixin-max-md();
+  @include login-mixin-max-md();
+  @include forgot_password-mixin-max-md();
+  @include reset_password-mixin-max-md();
+  @include finalHeroSection-mixin-max-md();
+  @include aboutUs-mixin-max-md();
+  @include featuers-page-mixin-max-md();
+  @include verfiy_password-mixin-max-md();
+  @include register-mixin-max-md();
+  @include privacy_Policy-mixin-max-md();
+  @include termscondition-mixin-max-md();
+  @include contact-us-mixin-max-md();
+  @include career-mixin-max-md();
+  @include career-details-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include hero_Section-mixin-max-sm();
+  @include services-mixin-max-sm();
+  // @include inner_pages_banner-mixin-max-sm();
+  @include subscription-page-mixin-max-sm();
+  @include login-mixin-max-sm();
+  @include forgot_password-mixin-max-sm();
+  @include reset_password-mixin-max-sm();
+  @include finalHeroSection-mixin-max-sm();
+  @include aboutUs-mixin-max-sm();
+  @include featuers-page-mixin-max-sm();
+  @include verfiy_password-mixin-max-sm();
+  @include register-mixin-max-sm();
+  @include privacy_Policy-mixin-max-sm();
+  @include termscondition-mixin-max-sm();
+  @include contact-us-mixin-max-sm();
+  @include career-mixin-max-sm();
+  @include career-details-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include hero_Section-mixin-max-xs();
+  @include services-mixin-max-xs();
+  // @include inner_pages_banner-mixin-max-xs();
+  @include subscription-page-mixin-max-xs();
+  @include login-mixin-max-xs();
+  @include forgot_password-mixin-max-xs();
+  @include reset_password-mixin-max-xs();
+  @include finalHeroSection-mixin-max-xs();
+  @include aboutUs-mixin-max-xs();
+  @include featuers-page-mixin-max-xs();
+  @include verfiy_password-mixin-max-xs();
+  @include register-mixin-max-xs();
+  @include privacy_Policy-mixin-max-xs();
+  @include termscondition-mixin-max-xs();
+  @include contact-us-mixin-max-xs();
+  @include career-details-mixin-max-xs();
+}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
