@@ -1,5 +1,5 @@
 import React from 'react'
-import InstagramLogin from 'react-instagram-login';
+import {InstagramLogin} from "@amraneze/react-instagram-login"
 function Instagram() {
 
      

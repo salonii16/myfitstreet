@@ -12,7 +12,7 @@ import { useEffect } from "react";
 import Google from "../../Common/Sociallogin/Google";
 import Facebook from "../../Common/Sociallogin/Facebook";
 import Instagram from "../../Common/Sociallogin/Instagram";
-import { InstagramLogin } from "react-instagram-login";
+
 function Login() {
   const navigate = useNavigate();
 
