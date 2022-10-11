@@ -10,7 +10,7 @@ const responseInstagram = (response) => {
   return (
     <div>
          <InstagramLogin
-    clientId="816051839441704"
+    clientId="2561162357358027"
     buttonText="Login"
     onSuccess={responseInstagram}
     onFailure={responseInstagram}
