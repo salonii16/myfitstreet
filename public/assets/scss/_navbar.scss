@@ -1,0 +1,145 @@
+// HEADER creted BY DEEPAK
+header {
+  &.navbar_header {
+    z-index: 999;
+    &.fixed-top {
+      &.header-top {
+        & .bg_container1 {
+          & .bg_container2 {
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+            background: transparent;
+          }
+          & .logo_image {
+            width: 100%;
+          }
+          & .header_collapse {
+            & .button_group {
+              & .reg_button {
+                text-decoration: none !important;
+                font-size: 14px !important;
+                font-style: italic !important;
+                width: 100px !important;
+                height: 40px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                border-radius: 10px !important;
+                border: none !important;
+                background-color: rgb(241 90 34 / 93%) !important;
+                transition: 0.3s ease-in;
+                &:hover{
+                  background-color: $theme1 !important;
+                }
+               
+              }
+              & .login_button {
+                text-decoration: none;
+                font-size: 14px;
+                font-style: italic;
+                width: 100px;
+                height: 40px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                border: 1px solid #646464 !important;
+                border-radius: 10px !important;
+                transition: 0.3s ease-in;
+
+                &:hover{
+                  background-color: $theme1 !important;
+                  color: $white !important;
+                 border-color: $theme1 !important;
+                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.offcan {
+  & .body_offcanvas {
+    & .reg_button {
+      text-decoration: none !important;
+      font-size: 14px !important;
+      font-style: italic !important;
+      height: 40px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 10px !important;
+      border: none !important;
+      background-color: $theme1 !important;
+      &:hover {
+        background-color: $theme1 !important;
+      }
+    }
+    & .login_button {
+      text-decoration: none;
+      font-size: 14px;
+      font-style: italic;
+      height: 40px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: 1px solid #646464 !important;
+      border-radius: 10px !important;
+      &:hover {
+        background-color: $theme1 !important;
+        color: $white !important;
+       border-color: $theme1 !important;
+      }
+    }
+  }
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff !important;
+  transition: 0.3s;
+}
+.custom_bg {
+  &.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 575px) {
+  .logo_image {
+    width: 70% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo_image {
+    width: 75% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo_image {
+    width: 85% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .logo_image {
+    width: 90% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .logo_image {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+}

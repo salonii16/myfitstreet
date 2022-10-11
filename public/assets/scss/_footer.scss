@@ -1,0 +1,370 @@
+footer {
+  background-color: #121016 !important;
+  & .footerMenu {
+    & .menuHeading {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      & span {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+    & ul {
+      & li {
+        & a {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.8);
+          transition: all 0.3s ease-in;
+          &:hover {
+            color: $theme1;
+          }
+        }
+      }
+    }
+  }
+  & .socialLink {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    & .footerMenu {
+      & hr {
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        opacity: 1;
+        margin: 0 8px 0 30px;
+      }
+      & ul {
+        & li {
+          & a {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            transition: all 0.3s ease-in;
+            &:hover {
+              border-color: $theme1 !important;
+            }
+          }
+        }
+      }
+    }
+
+    & ul {
+      &.tremCondition {
+        & li {
+          & a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            transition: all 0.3s ease-in;
+            &:hover {
+              color: $theme1;
+            }
+          }
+          & span {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  & .copyRight {
+    & span {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+    }
+  }
+  & .footer_up_text {
+    & .footer_bootom_line {
+      border-bottom: 1px solid;
+      border-color: rgba(255, 255, 255, 0.1);
+      padding-bottom: 30px;
+      & .footer_heading {
+        font-size: 52px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 55px;
+        color: #fff;
+        & .color_change {
+          color: $theme1;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin footer-mixin-min-sm() {
+}
+// Medium devices (tablets, 768px and up)
+@mixin footer-mixin-min-md() {
+}
+// Large devices (desktops, 992px and up)
+@mixin footer-mixin-min-lg() {
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin footer-mixin-min-xl() {
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin footer-mixin-min-xxl() {
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin footer-mixin-max-xs() {
+  footer {
+    & .footerMenu {
+      & .menuHeading {
+        & span {
+        }
+      }
+      & ul {
+        & li {
+          & a {
+          }
+        }
+      }
+    }
+    & .socialLink {
+      & .footerMenu {
+        & hr {
+          display: none;
+        }
+        & ul {
+          & li {
+            & a {
+              width: 30px;
+              height: 30px;
+              & img {
+              }
+            }
+          }
+        }
+      }
+
+      & ul {
+        &.tremCondition {
+          & li {
+            & a {
+            }
+            & span {
+            }
+          }
+        }
+      }
+    }
+    & .copyRight {
+      & span {
+      }
+    }
+    & .footer_heading {
+      font-size: 30px !important;
+      line-height: 35px !important;
+    }
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin footer-mixin-max-sm() {
+  .footer {
+    & .footerMenu {
+      & .menuHeading {
+        & span {
+          font-size: 16px;
+        }
+      }
+      & ul {
+        & li {
+          & a {
+          }
+        }
+      }
+    }
+    & .socialLink {
+      & .footerMenu {
+        & hr {
+        }
+        & ul {
+          & li {
+            & a {
+              & img {
+              }
+            }
+          }
+        }
+      }
+
+      & ul {
+        &.tremCondition {
+          & li {
+            & a {
+            }
+            & span {
+            }
+          }
+        }
+      }
+    }
+    & .copyRight {
+      & span {
+      }
+    }
+  }
+}
+// Medium devices (tablets, less than 992px)
+@mixin footer-mixin-max-md() {
+}
+// Large devices (desktops, less than 1200px)
+@mixin footer-mixin-max-lg() {
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin footer-mixin-max-xl() {
+}
+
+// *************************************************************** Footer_2*************************************************************************************
+footer {
+  &.footer_2 {
+    & .footer_2_text {
+      font-style: italic;
+      color: $theme1;
+      font-size: 30px;
+      line-height: 35.16px;
+    }
+
+    & .footer2_Icon {
+      & .icon_social {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $white;
+        transition: all 0.3s ease-in;
+        &:hover {
+          border-color: $theme1;
+        }
+      }
+    }
+    & .border_btm {
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(0.25turn, $black, $white, $black);
+      border-image-slice: 1;
+      width: 100%;
+    }
+    & .footer_list {
+      & ul {
+        & li {
+          & a {
+            transition: all 0.3s ease-in;
+            &:hover {
+              color: $theme1 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@mixin footer_2-mixin-min-sm() {
+  .footer_2 {
+    & .footer_list {
+      & ul {
+        display: flex !important;
+      }
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@mixin footer_2-mixin-min-md() {
+}
+// Large devices (desktops, 992px and up)
+@mixin footer_2-mixin-min-lg() {
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin footer_2-mixin-min-xl() {
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin footer_2-mixin-min-xxl() {
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin footer_2-mixin-max-xs() {
+}
+// Small devices (landscape phones, less than 768px)
+@mixin footer_2-mixin-max-sm() {
+}
+// Medium devices (tablets, less than 992px)
+@mixin footer_2-mixin-max-md() {
+}
+// Large devices (desktops, less than 1200px)
+@mixin footer_2-mixin-max-lg() {
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin footer_2-mixin-max-xl() {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  @include footer-mixin-min-sm();
+  @include footer_2-mixin-min-sm();
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include footer-mixin-min-md();
+  @include footer_2-mixin-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include footer-mixin-min-lg();
+  @include footer_2-mixin-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include footer-mixin-min-xl();
+  @include footer_2-mixin-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include footer-mixin-min-xxl();
+  @include footer_2-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  @include footer-mixin-max-xl();
+  @include footer_2-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include footer-mixin-max-lg();
+  @include footer_2-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include footer-mixin-max-md();
+  @include footer_2-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include footer-mixin-max-sm();
+  @include footer_2-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include footer-mixin-max-xs();
+  @include footer_2-mixin-max-xs();
+}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
